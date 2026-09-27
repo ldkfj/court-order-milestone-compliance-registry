@@ -39,5 +39,7 @@ assessment, depending on where the failure occurs.
 - E2E-08: replay tx `0x10952b40b8868c5ca400487af33e288c52969e7a7d84f43850674f9d27aebadf`; same canonical result and assessment count remained `1`.
 - E2E-09: actor8 tx `0x3891692bc297f982eca54fe0f757008bac7b64208130dd8c6f2223fc5825976c`; consensus accepted but execution `FINISHED_WITH_ERROR`, with no state change.
 - E2E-10: supersede tx `0xe5faa0d31ae58ea2cca891cfb95f050e2d3f3a88c5cbba2f63ffe4fd754184ac`; status `SUPERSEDED`, replacement reference and prior events preserved.
+- E2E-05: separate Studio Dev contract `0xC869672e3b4B39235FE5710A473A9Ce36B14fB3D`; assessment tx `0xd3bc3f225c636b1d3151698c51e4469316c9781ea3cfdfacaf38e083760eabaa`; readback was `REVIEW_REQUIRED`, `case_match=false`, `manual_review_required=true`.
+- E2E-06: separate Studio Dev contract `0xa3fCA373D78E48c1f23cE2c9C0a6E257a056dA2B`; assessment tx `0x4db3121aeced72e487af3cede6d28d991ac7c8690f4540430b99d283f8377227`; missing-date manifest produced a non-favorable review result.
 
-The wrong-case, missing-date, and missing-clause counterexamples remain covered by the 14-test Direct Mode suite; separate live negative deployments were not used for the submission claim.
+E2E-07 remains covered by the 14-test Direct Mode suite; an attempted live manifest with an invalid clause anchor was rejected at creation, so no invalid evidence could be sealed.

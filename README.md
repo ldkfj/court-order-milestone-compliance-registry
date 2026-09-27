@@ -8,6 +8,8 @@ Studio Dev (chain 61997) deployment: `0x6Dc0D76Cb47093882e2B1d0CB163339F9F40f654
 
 Live receipts: create `0x83c1568afdcb4476d952fc7d77a48c4fc1f647e4eb7759d5c6bb5c90656a67aa`; seal `0xa06c4f286134c4eb202775af79d1aed80091d2ad1be728e5b16db9d1e21d773f`; assess `0x5e7f87801e7a3374019614330ad540633ba804585c8d16cf005ca2316a0914c8`; replay `0x10952b40b8868c5ca400487af33e288c52969e7a7d84f43850674f9d27aebadf`; unauthorized `0x3891692bc297f982eca54fe0f757008bac7b64208130dd8c6f2223fc5825976c` (expected execution error); supersede `0xe5faa0d31ae58ea2cca891cfb95f050e2d3f3a88c5cbba2f63ffe4fd754184ac`.
 
+Negative live evidence: wrong-case assessment `0xd3bc3f225c636b1d3151698c51e4469316c9781ea3cfdfacaf38e083760eabaa` returned `REVIEW_REQUIRED`; missing-date assessment `0x4db3121aeced72e487af3cede6d28d991ac7c8690f4540430b99d283f8377227` was non-favorable.
+
 ## Purpose
 
 The registry addresses a narrow linkage problem: a court order and a later public status report may use narrative identifiers and dates, while a party-controlled index can point to a similarly titled filing from another matter. The owner seals exact case, clause, period, filing identity, date, and two DOJ URLs. Validators independently refetch the sources and agree on the complete decision vector.
