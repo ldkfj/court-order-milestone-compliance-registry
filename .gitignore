@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+artifacts/
+*.pyc
+.env
+.venv/
+.wsl-venv/
+operation-journal.local.json
